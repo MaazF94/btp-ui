@@ -1,0 +1,68 @@
+<app-nav-bar></app-nav-bar>
+<mat-horizontal-stepper #stepper>
+  <mat-step>
+    <form>
+      <ng-template matStepLabel>Personal Info</ng-template>
+      <div class="row">
+        <div class="col-md-12">
+            <input class="form-control fields" name="companyName" [(ngModel)]="companyName" matInput placeholder="Company Name (Optional)"/>
+            <input class="form-control fields" name="jobTitle" [(ngModel)]="jobTitle" matInput placeholder="Job Title"/>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+            <select name="careerCategory" [(ngModel)]="careerCategory" (ngModelChange)="filterProfessionDropdown();" class="form-control fields">
+              <option value="undefined">Select Career Category</option>
+              <option *ngFor="let category of professionalCategories" value="{{category.categoryName}}" >{{category.categoryName}}</option>
+            </select>
+            <select class="form-control fields" name="profession" [(ngModel)]="profession">
+                <option value="undefined">Select Profession</option>
+                <option *ngFor="let profession of professions" value="{{profession}}" >{{profession}}</option>
+            </select>        
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+            <input min="0" name="yrsOfExp" [(ngModel)]="yrsOfExp" type="number" class="form-control fields" matInput placeholder="Years of Experience" />
+        </div>
+      </div>
+      <div class="next">
+        <button mat-button matStepperNext>Next</button>
+      </div>
+    </form>
+  </mat-step>
+  <mat-step>
+    <form>
+      <ng-template matStepLabel>Settings</ng-template>
+      <div class="row">
+        <div class="col-md-12">
+                <input min="0" name="queueSize" [(ngModel)]="queueSize" type="number" class="form-control fields" matInput placeholder="I would like no more than __ request(s) at a time...(Optional)" />
+                <input min="0" name="replyTime" [(ngModel)]="replyTime" type="number" class="form-control fields" matInput placeholder="It will take me about __ days to reply to a request... (Optional)" />
+        </div>
+      </div>
+      <div class="next">
+        <button mat-button matStepperNext>Next</button>
+      </div>
+      <div class="next">
+          <button mat-button matStepperPrevious>Back</button>
+      </div>
+    </form>
+  </mat-step>
+  <mat-step>
+    <form>
+      <ng-template matStepLabel>Final Details</ng-template>
+      <div class="row">
+        <div class="col-md-12">
+                <textarea name="aboutMe" [(ngModel)]="aboutMe" class="form-control text-area" matInput placeholder="Tell people about your background, professional career, etc... (About Me)" required></textarea>
+                <textarea name="jobDescription" [(ngModel)]="jobDescription" class="form-control text-area" matInput placeholder="Tell people about your job, day to day activities, etc... (Job Description)" required></textarea>
+        </div>
+      </div>
+      <div class="next">
+        <button (click)="createProfessional();" mat-button>Finish</button>
+      </div>
+      <div class="next">
+          <button mat-button matStepperPrevious>Back</button>
+      </div>
+    </form>
+  </mat-step>
+</mat-horizontal-stepper>

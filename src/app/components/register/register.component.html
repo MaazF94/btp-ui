@@ -1,0 +1,80 @@
+<div class="register-header" mat-dialog-title>Create an Account!</div>
+<div [hidden]="errorMsg===''" class="alert alert-danger">
+  {{errorMsg}}
+</div>
+<mat-dialog-content>
+  <form>
+    <input
+      name="fullName"
+      [(ngModel)]="fullName"
+      type="text"
+      class="form-control register"
+      matInput
+      placeholder="Your Full Name"
+      required
+    />
+    <div [hidden]="!fullNameMissing" class="alert alert-danger">
+      {{fullNameErrMsg}}
+    </div>
+    <input
+      type="email"
+      name="email"
+      [(ngModel)]="email"
+      class="form-control register"
+      matInput
+      placeholder="Your Email"
+      required
+    />
+    <div [hidden]="!emailMissing" class="alert alert-danger">
+      {{ emailErrMsg }}
+    </div>
+    <div [hidden]="!returnMsg" class="alert alert-danger">
+      {{ returnMsg }}
+    </div>
+    <input
+      type="password"
+      name="password"
+      [(ngModel)]="password"
+      class="form-control register"
+      matInput
+      placeholder="Your Password"
+      required
+    />
+    <div [hidden]="!passwordMissing" class="alert alert-danger">
+      Password is required
+    </div>
+    <input
+      type="password"
+      name="confirmPassword"
+      [(ngModel)]="confirmPassword"
+      class="form-control register"
+      matInput
+      placeholder="Confirm Your Password"
+      required
+    />
+    <div [hidden]="!confirmPasswordMissing" class="alert alert-danger">
+      {{ confirmpasswordErrMsg }}
+    </div>
+    <input
+      name="school"
+      [(ngModel)]="school"
+      class="form-control register"
+      matInput
+      placeholder="Your School (Optional)"
+    />
+  </form>
+</mat-dialog-content>
+<mat-dialog-actions>
+  <button (click)="register()" class="form-control register-btn" mat-button>
+    Register
+  </button>
+  <div class="receive-email">
+    By joining, I agree to receive emails
+  </div>
+  <div class="login">
+    Already a member?
+    <a class="login-btn" mat-menu-item (click)="openLoginModal()">
+      Login!
+    </a>
+  </div>
+</mat-dialog-actions>

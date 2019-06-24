@@ -1,0 +1,41 @@
+<div class="login-header" mat-dialog-title>Log In to Build The Pro!</div>
+<div [hidden]="!returnMsg" class="alert alert-danger">
+  {{ returnMsg }}
+</div>
+<div [hidden]="!errorMsg" class="alert alert-danger">
+  {{ errorMsg }}
+</div>
+<mat-dialog-content>
+  <input
+    type="email"
+    [(ngModel)]="email"
+    name="email"
+    class="form-control login"
+    matInput
+    placeholder="Email"
+  />
+
+  <input
+    type="password"
+    [(ngModel)]="password"
+    name="password"
+    class="form-control login"
+    matInput
+    placeholder="Password"
+  />
+</mat-dialog-content>
+<mat-dialog-actions>
+  <button class="form-control login-btn" (click)="login()" mat-button>Login</button>
+  <div class="forgot-password">
+    or
+    <a class="register-btn" mat-menu-item (click)="openForgotPasswordModal()">
+        Forgot Password?
+      </a>
+  </div>
+  <div class="register">
+    Don't have an account?
+    <a class="register-btn" mat-menu-item (click)="openRegisterModal()">
+      Sign up!
+    </a>
+  </div>
+</mat-dialog-actions>

@@ -1,0 +1,27 @@
+.fltrDropdowns {
+    margin-left: 3px;
+    margin-right:3px;
+}
+
+.fltrLabel {
+    font-size: 14px;
+    font-weight:400;
+    margin-right: 3px;
+    margin-left: 25px;
+}
+
+.search {
+    position: relative;
+    margin-left: 2%;
+    width: 100%;
+}
+
+.search-btn {
+    position: absolute;
+    background-color: dodgerblue;
+    color: white;
+    border-radius: inherit;
+    padding-top: 1px;
+    padding-left: 10px;
+    right: 15px;
+}

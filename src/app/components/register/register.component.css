@@ -1,0 +1,43 @@
+.register-header {
+  border-bottom: solid 1px #dedfe0;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+  color: #29303b;
+  display: block;
+  font-weight: 500;
+  font-size: 20px;
+  padding: 10px 51px 10px 75px;
+}
+
+.register {
+  margin-top: 2%;
+  border-radius: 5px;
+  color: #29303b;
+  font-size: 18px;
+  height: auto;
+  padding: 11px 45px 12px 10px;
+}
+
+.register-btn {
+  margin-top: 1%;
+  border-style: solid;
+  border-width: 1px;
+  background-color: dodgerblue;
+  border-color: dodgerblue;
+  color: white;
+}
+
+.receive-email {
+  padding: 11px 64px 10px 64px;
+  font-size: 12px;
+}
+
+.login {
+  padding: 0px 50px 10px 64px;
+}
+
+.login-btn {
+    color: #007bff;
+    font-size: 16px;
+    cursor: pointer;
+}

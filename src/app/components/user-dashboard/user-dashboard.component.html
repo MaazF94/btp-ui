@@ -1,0 +1,9 @@
+<app-nav-bar></app-nav-bar>
+  <mat-toolbar class="header">
+      <div class="tabs">
+        <button [ngClass]="{'tab': true, 'clicked': rcvAdvBtnClicked}" (click)="rcvAdvClicked();" mat-button>Received Advice</button>
+        <button [ngClass]="{'tab': true, 'clicked': rqstAdvBtnClicked}" (click)="rqstAdvClicked();" mat-button>Requested Advice</button>
+        <button [ngClass]="{'tab': true, 'clicked': resProgBtnClicked}" (click)="resProgClicked();" mat-button>Resume Progression</button>
+      </div>
+  </mat-toolbar>
+<app-received-advice *ngIf="rcvAdvBtnClicked"></app-received-advice>

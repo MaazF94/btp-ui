@@ -1,0 +1,9 @@
+  <mat-toolbar color="white">
+      <div *ngFor="let category of professionalCategories" class="dropdown">
+          <button class="dropbtn">{{category.categoryName}}</button>
+          <div class="dropdown-content">
+            <a *ngFor="let profession of category.professionName" href="#">{{profession}}</a>
+          </div>
+        </div>
+  </mat-toolbar>
+  <mat-divider></mat-divider>

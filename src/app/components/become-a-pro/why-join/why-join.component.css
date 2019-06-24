@@ -1,0 +1,80 @@
+.join-us-title {
+    font-size: 28px;
+    text-align: center;
+    padding-top: 3%;
+}
+
+hr {
+    width: 40%;
+    border-style: inset;
+    border-width: 1px;
+    margin-top: 0.5em;
+    border-color: dodgerblue;
+    margin-bottom: 0.5em;
+}
+
+.make-money {
+    padding-top: 4%;
+    width: 7%;
+    height: 10%;
+    margin-left: 20%;
+    position: relative;
+}
+
+.network {
+    padding-top: 4%;
+    width: 7%;
+    height: 10%;
+    margin-left: 19%;
+    position: relative;
+}
+
+.teach {
+    padding-top: 4%;
+    width: 7%;
+    height: 10%;
+    margin-left: 19%;
+    position: relative;
+}
+
+.make-money-title {
+    position: absolute;
+    left: 19%;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.make-money-text {
+    position: absolute;
+    bottom: -34%;
+    width: 20%;
+    left: 14%;
+}
+
+.teach-title {
+    position: absolute;
+    left: 45%;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.teach-text {
+    position: absolute;
+    bottom: -34%;
+    width: 25%;
+    left: 38%;
+}
+
+.network-title {
+    position: absolute;
+    right: 20%;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.network-text {
+    position: absolute;
+    bottom: -34%;
+    width: 24%;
+    right: 10%;
+}

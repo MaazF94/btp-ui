@@ -1,0 +1,36 @@
+.login {
+    border-style: solid;
+    border-width: 1px;
+}
+
+.register {
+    border-style: solid;
+    border-width: 1px;
+    background-color: dodgerblue;
+    border-color: dodgerblue;
+    color: white;
+}
+
+.mat-button {
+    margin-right: 1%;
+}
+
+.example-spacer {
+    flex: 1 1 auto;
+  }
+
+.search {
+    position: relative;
+    margin-left: 2%;
+    width: 30%;
+}
+
+.search-btn {
+    position: absolute;
+    background-color: dodgerblue;
+    color: white;
+    left: 41.7%;
+    border-radius: inherit;
+    padding-top: 1px;
+    padding-left: 10px;
+}
