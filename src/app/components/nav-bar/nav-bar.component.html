@@ -3,12 +3,13 @@
 
   <input
     type="search"
-    name="search"
+    name="searchQuery"
+    [(ngModel)]="searchQuery"
     class="form-control search"
     matInput
     placeholder="Search for anything"
   />
-  <button class="search-btn" mat-button>
+  <button (click)="search();" class="search-btn" mat-button>
       <mat-icon>search</mat-icon>
       Search
   </button>

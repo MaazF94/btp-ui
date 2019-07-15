@@ -1,3 +1,4 @@
+import { SearchResultsComponent } from './components/search-results/search-results.component';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './components/home/home.component';
 import { NgModule } from '@angular/core';
@@ -34,6 +35,10 @@ const routes: Routes = [
         path: 'user-dashboard',
         component: UserDashboardComponent,
         canActivate: [NoAuthGuard]
+      },
+      {
+        path: 'search-results',
+        component: SearchResultsComponent
       }
     ]
   }

@@ -1,0 +1,59 @@
+.login-header {
+    border-bottom: solid 1px #DEDFE0;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+    color: #29303B;
+    display: block;
+    font-weight: 500;
+    font-size: 20px;
+    padding: 10px 51px 10px 63px;
+    text-align: -webkit-center;
+}
+
+.aboutMe {
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.fileUpload {
+    margin-top: 20px;
+    font-size: 13px;
+    font-weight: 400;
+}
+
+.file {
+    margin-top: 10px
+}
+
+.question-header {
+    width: 500px;
+    margin-top: 10px;
+    font-size: 13px;
+    font-weight: 400;
+}
+
+.question-input {
+    margin-top: 10px;
+    height: 100px;
+    width: 800px;
+}
+
+.submit-btn {
+    margin-top: 1%;
+    border-style: solid;
+    border-width: 1px;
+    background-color: dodgerblue;
+    border-color: dodgerblue;
+    color: white;
+}
+
+.cancel-btn {
+    margin-top: 1%;
+    border-style: solid;
+    border-width: 1px;
+    color: black;
+}
+
+.btns {
+    margin: auto
+}

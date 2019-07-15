@@ -12,4 +12,5 @@ export class Professional {
     replyTime: number;
     aboutMe: string;
     jobDescription: string;
+    fullName: string;
 }

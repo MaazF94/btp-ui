@@ -1,6 +1,6 @@
 .header {
     width: 100%;
-    background-color: #505763 !important;
+    background-color: lightslategray;
     height: 125px;
 }
 
@@ -11,8 +11,9 @@
 .tab {
     font-size: 20px;
     font-weight: 400;
-    width: 67%;
+    width: 66%;
     margin-left: 6px;
+    border-style: solid;
 }
 
 .clicked {

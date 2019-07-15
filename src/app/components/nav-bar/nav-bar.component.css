@@ -34,3 +34,7 @@
     padding-top: 1px;
     padding-left: 10px;
 }
+
+.mat-toolbar {
+    background: white;
+}

@@ -1,0 +1,53 @@
+<app-nav-bar></app-nav-bar>
+
+<mat-toolbar class="filters">
+  <span class="fltrLabel">Filter by:</span>
+    <!-- <div class="col-md-3">
+        <span class="fltrLabel">Sort by:</span>
+        <select class="form-control fltrDropdowns">
+          <option>Most Recent</option>
+        </select>
+    </div> -->
+    <div class="col-md-3">
+        <!-- <span class="fltrLabel">Filter by:</span> -->
+        <select class="form-control fltrDropdowns">
+          <option>Categories</option>
+        </select>
+    </div>
+    <div class="col-md-3">
+        <select class="form-control fltrDropdowns">
+            <option>Profession</option>
+        </select>
+    </div>
+    <div class="col-md-3">
+        <select class="form-control fltrDropdowns">
+            <option>Professionals' Name</option>
+        </select>
+    </div>
+  </mat-toolbar>
+
+  <div class="results">
+      <span *ngIf="searchQuery && searchResult.length === 1">{{searchResult.length}} Result for {{searchQuery}}</span>
+      <span *ngIf="searchQuery && searchResult.length > 1">{{searchResult.length}} Results for {{searchQuery}}</span>
+  </div>
+
+  <div *ngFor="let item of searchResult; let i = index;">
+    <div class="col-md-11">
+        <mat-card class="card">
+            <mat-card-header>
+              <mat-card-title>{{item.categoryName}} | {{item.professionName}}</mat-card-title>
+              <mat-card-subtitle>{{item.fullName}}, {{item.jobTitle}} <br> {{item.companyName}}</mat-card-subtitle>
+            </mat-card-header>
+            <mat-card-content>
+              <div style="margin-left: 17px;">
+                  <b>Job Description: </b><br><span>{{item.jobDescription}}</span>
+              </div>
+            </mat-card-content>
+            <mat-card-actions>
+                <button (click)="openProfessionalLanding(i);" mat-button>Ask {{item.fullName}} for advice</button>
+                <star-rating [readOnly]="true" [showHalfStars]="true" [starType]="'svg'" [rating]="[item.avgRating]"></star-rating>
+            </mat-card-actions>
+          </mat-card>
+    </div>
+    <hr>
+  </div>

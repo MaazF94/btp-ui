@@ -73,6 +73,7 @@ export class ProStepperComponent implements OnInit {
     this.professional.replyTime = this.replyTime;
     this.professional.yearsOfExperience = this.yrsOfExp;
     this.professional.isActive = 1;
+    this.professional.fullName = this.authService.getCurrentUser().fullName;
   }
 
   setProfessionalCategoriesDropdown() {

@@ -27,9 +27,19 @@
 }
 
 .card {
-    max-width: 405px;
-    display: -webkit-inline-box;
-    margin-left: 7px;
-    margin-right: 7px;
+    margin-bottom: 15px;
     margin-top: 15px;
+    margin-left: 15px;
+}
+
+.mat-card-actions .mat-button:first-child, .mat-card-actions .mat-raised-button:first-child {
+    margin-left: 10px;
+    margin-right: 0;
+}
+
+.results {
+    text-align: -webkit-center;
+    margin-top: 10px;
+    font-size: 20px;
+    font-weight: 500;
 }

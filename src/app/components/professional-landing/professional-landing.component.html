@@ -1,0 +1,21 @@
+<div class="login-header" mat-dialog-title>Ask {{professionalFromSearch.fullName}} for advice</div>
+
+<mat-dialog-content>
+  <!-- <div class="aboutMe">
+      <span><b>About Me:</b><br>{{professionalFromSearch.aboutMe}}</span>
+  </div> -->
+  <div class="fileUpload">
+      <span><b>Do you want feedback on your resume?</b></span><br>
+      <input class="file" type="file">
+  </div>
+  <div class="question-header">
+    <span><b>Have questions? Ask anything that's on your mind.</b></span>
+    <textarea class="form-control question-input"></textarea>
+  </div>
+</mat-dialog-content>
+<mat-dialog-actions>
+  <div class="btns">
+      <button mat-button class="submit-btn">Submit</button>
+      <button mat-button class="cancel-btn">Cancel</button>
+  </div>
+</mat-dialog-actions>
