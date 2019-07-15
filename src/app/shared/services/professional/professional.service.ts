@@ -15,10 +15,19 @@ const httpOptions = {
 export class ProfessionalService {
 
   url = 'http://localhost:8080/btp/createProfessional';
+  public professionalFromSearch: Professional;
 
   constructor(private http: HttpClient) { }
 
   createProfessional(professional: Professional): Observable<ProfessionalResponseObj> {
     return this.http.post<ProfessionalResponseObj>(this.url, professional, httpOptions);
+  }
+
+  setProfessionalFromSearch(professional: Professional) {
+    this.professionalFromSearch = professional;
+  }
+
+  getProfessionalFromSearch(): Professional {
+    return this.professionalFromSearch;
   }
 }

@@ -13,7 +13,8 @@ import {MatButtonModule, MatIconModule,
         MatDividerModule,
         MatDialogModule,
         MAT_DIALOG_DEFAULT_OPTIONS,
-        MatStepperModule} from '@angular/material';
+        MatStepperModule,
+        MatCardModule} from '@angular/material';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { CategoryProfessionComponent } from './components/category-profession/category-profession.component';
 import { HttpClientModule } from '@angular/common/http';
@@ -29,6 +30,9 @@ import { ProStepperComponent } from './components/pro-stepper/pro-stepper.compon
 import { NoAuthGuard } from './shared/security/no-auth-guard/NoAuthGuard';
 import { UserDashboardComponent } from './components/user-dashboard/user-dashboard.component';
 import { ReceivedAdviceComponent } from './components/received-advice/received-advice.component';
+import { StarRatingModule } from 'angular-star-rating';
+import { SearchResultsComponent } from './components/search-results/search-results.component';
+import { ProfessionalLandingComponent } from './components/professional-landing/professional-landing.component';
 
 @NgModule({
   declarations: [
@@ -43,7 +47,9 @@ import { ReceivedAdviceComponent } from './components/received-advice/received-a
     WhyJoinComponent,
     ProStepperComponent,
     UserDashboardComponent,
-    ReceivedAdviceComponent
+    ReceivedAdviceComponent,
+    SearchResultsComponent,
+    ProfessionalLandingComponent
     ],
   imports: [
     BrowserModule,
@@ -63,13 +69,15 @@ import { ReceivedAdviceComponent } from './components/received-advice/received-a
     HttpClientModule,
     MatDialogModule,
     FormsModule,
-    MatStepperModule
+    MatStepperModule,
+    MatCardModule,
+    StarRatingModule.forRoot()
   ],
   providers: [LoginComponent,
     {provide: MAT_DIALOG_DEFAULT_OPTIONS, useValue: {hasBackdrop: true}}, RegisterComponent, ForgotPasswordComponent,
-    NavBarComponent, NoAuthGuard, ProStepperComponent
+    NavBarComponent, NoAuthGuard, ProStepperComponent, SearchResultsComponent
   ],
   bootstrap: [AppComponent],
-  entryComponents: [LoginComponent, RegisterComponent, ForgotPasswordComponent]
+  entryComponents: [LoginComponent, RegisterComponent, ForgotPasswordComponent, ProfessionalLandingComponent]
 })
 export class AppModule { }

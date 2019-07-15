@@ -7,6 +7,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ReceivedAdviceComponent implements OnInit {
 
+  Arr = Array; //Array type captured in a variable
+  num = 3;
+
   constructor() { }
 
   ngOnInit() {
