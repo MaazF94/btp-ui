@@ -1,27 +1,20 @@
-# BtpUi
+# Build The Pro
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.6.
 
-## Development server
+## Screenshots
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+### Website
+![Homepage](./src/assets/img/homepage.png)
+![Become a Pro](./src/assets/img/Become%20a%20Pro.jpeg)
+![Become a Pro Form](./src/assets/img/Become%20a%20Pro%20Step%202.jpeg)
 
-## Code scaffolding
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+### Promotional Material
+![Flyer](./src/assets/img/Digital%20Flyer.jpeg)
+![LinkedIn](./src/assets/img/LinkedIn%20Build%20The%20Pro%20Cover%20Image.jpeg)
+![Register as a Pro](./src/assets/img/Promo%20Image%205.jpeg)
+![Talk to a Pro](./src/assets/img/Promo%20Image%204.jpeg)
+![Resume Review](./src/assets/img/Promo%20Image%203.jpeg)
+![Ask](./src/assets/img/Promo%20Image%202.jpeg)
+![Make Money](./src/assets/img/Promo%20Image%201.jpeg)
+![Humans of the Workforce](./src/assets/img/Humans%20of%20the%20Workforce.jpeg)
